@@ -5,6 +5,13 @@ The benchmark source code was also taken from there and modified to use pcre nat
 
 Tested environment: CentOS 6.3 on VirtualBox 4.2.6, MacBook Pro 2012, Core i7 2.6GHz, 16GB 1600MHz DDR3 RAM, Apple SSD
 
+Sample regular expressions:
+
+* URI (protocol://server/path): ```([a-zA-Z][a-zA-Z0-9]*)://([^ /]+)(/[^ ]*)?```
+* Email (name@server): ```([^ @]+)@([^ @]+)```
+* Date (month/day/year): ```([0-9][0-9]?)/([0-9][0-9]?)/([0-9][0-9]([0-9][0-9])?)```
+* URI|Email: ```([a-zA-Z][a-zA-Z0-9]*)://([^ /]+)(/[^ ]*)?|([^ @]+)@([^ @]+)```
+
 <table style="border-collapse: collapse; border: solid; text-align: right;">
   <tr>
     <td style="border-style: solid; border-width:0 1px; padding: 4px;"></td>
